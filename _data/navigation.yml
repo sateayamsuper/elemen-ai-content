@@ -1,0 +1,11 @@
+main:
+  - title: Home
+    url: /
+  - title: All Posts
+    url: /archives/
+  - title: About
+    url: /about/
+
+footer:
+  - title: GitHub
+    url: https://sateayamsuper.github.io/elemen-ai-content/
