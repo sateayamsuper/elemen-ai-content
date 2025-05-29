@@ -1,10 +1,9 @@
 title: Elemen.ai Content Hub
 description: Drafts for AI-Generated Content
-baseurl: "/elemen-ai-content" # Leave empty unless you're serving from a subpath
-url: "https://sateayamsuper.github.io" # No trailing slash
+baseurl: "" 
+url: "https://sateayamsuper.github.io"
 
-theme: jekyll-theme-cayman
+theme: minima
 
-markdown: kramdown
 plugins:
   - jekyll-feed
