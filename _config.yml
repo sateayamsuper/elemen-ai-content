@@ -1,16 +1,10 @@
 title: Elemen.ai Content Hub
-description: AI-generated marketing drafts and posts
-baseurl: "/elemen-ai-content"      # leave empty for https://<user>.github.io/elemen-content
-url: "https://sateayamsuper.github.io/elemen-ai-content/"
-theme: minimal-mistakes-jekyll
+description: Drafts for AI-Generated Content
+baseurl: "/elemen-ai-content" # Leave empty unless you're serving from a subpath
+url: "https://sateayamsuper.github.io" # No trailing slash
 
-# Enable collections, plugins, and extras
+theme: jekyll-theme-cayman
+
+markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-
-collections:
-  posts:
-    output: true
-
-minimal_mistakes_skin: "modern"
