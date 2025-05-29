@@ -1,6 +1,6 @@
 title: Elemen.ai Content Hub
 description: AI-generated marketing drafts and posts
-baseurl: "/elemen-content"      # leave empty for https://<user>.github.io/elemen-content
+baseurl: "/elemen-ai-content"      # leave empty for https://<user>.github.io/elemen-content
 url: "https://sateayamsuper.github.io/elemen-ai-content/"
 theme: minimal-mistakes-jekyll
 
