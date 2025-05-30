@@ -1,11 +1,32 @@
 ---
-layout: default
+# This layout is only for posts
 ---
-<article>
-  {{ content }}
-</article>
-<p>
-  <a href="{{ '/' | prepend: site.baseurl }}" class="btn go-back" aria-label="Go back to content hub">
-    ← Back to Hub
-  </a>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a href="{{ '/' | prepend: site.baseurl }}" class="site-title">{{ site.title }}</a>
+  </header>
+
+  <main id="main-content" class="post-container">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+
+    <p style="text-align:center; margin-top:2rem;">
+      <a class="btn go-back" href="{{ '/' | prepend: site.baseurl }}" aria-label="Back to Hub">
+        ← Back to Hub
+      </a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    © {{ "now" | date: "%Y" }} Elemen.ai Content Hub
+  </footer>
+</body>
+</html>

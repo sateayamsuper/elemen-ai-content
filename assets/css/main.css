@@ -106,3 +106,28 @@ details li {
   background: #444d56;
 }
 
+/* Container for individual posts */
+.post-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 48rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Post content paragraphs */
+.post-container p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Back button */
+.go-back {
+  display: inline-block;
+  background: #586069;
+}
+.go-back:hover {
+  background: #444d56;
+}
+

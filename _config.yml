@@ -13,6 +13,6 @@ permalink: /posts/:year-:month-:day-:title/
 defaults:
   - scope:
       path: "_posts"
+      type: "posts"
     values:
       layout: post
-
