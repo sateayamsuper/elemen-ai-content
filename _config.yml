@@ -1,9 +1,9 @@
+# _config.yml
 title: Elemen.ai Content Hub
 description: Drafts for AI-Generated Content
-baseurl: "" 
 url: "https://sateayamsuper.github.io"
+baseurl: "/elemen-ai-content"
 
-theme: minima
-
+theme: jekyll-theme-primer     
 plugins:
   - jekyll-feed
