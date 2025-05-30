@@ -131,3 +131,35 @@ details li {
   background: #444d56;
 }
 
+/* Post “card” styling */
+.post-card {
+  background: #ffffff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 48rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.post-card h1 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.post-date {
+  color: #586069;
+  margin-bottom: 1.5rem;
+}
+
+.post-body p {
+  margin-bottom: 1.25rem;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+

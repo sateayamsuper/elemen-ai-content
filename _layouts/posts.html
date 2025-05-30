@@ -1,5 +1,5 @@
 ---
-# This layout is only for posts
+# _layouts/post.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,23 +10,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <a href="{{ '/' | prepend: site.baseurl }}" class="site-title">{{ site.title }}</a>
-  </header>
-
-  <main id="main-content" class="post-container">
+  <div class="post-card">
     <h1>{{ page.title }}</h1>
-    {{ content }}
+    <p class="post-date">{{ page.date | date: "%B %-d, %Y" }}</p>
 
-    <p style="text-align:center; margin-top:2rem;">
-      <a class="btn go-back" href="{{ '/' | prepend: site.baseurl }}" aria-label="Back to Hub">
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    <p class="back-link">
+      <a href="{{ '/' | prepend: site.baseurl }}" class="btn">
         ← Back to Hub
       </a>
     </p>
-  </main>
-
-  <footer class="site-footer">
-    © {{ "now" | date: "%Y" }} Elemen.ai Content Hub
-  </footer>
+  </div>
 </body>
 </html>
