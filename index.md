@@ -13,4 +13,3 @@ permalink: /
     <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
   </a>
 {% endfor %}
-gut
