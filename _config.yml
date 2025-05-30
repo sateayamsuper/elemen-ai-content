@@ -3,7 +3,9 @@ title: Elemen.ai Content Hub
 description: Drafts for AI-Generated Content
 url: "https://sateayamsuper.github.io"
 baseurl: "/elemen-ai-content"
-
-theme: jekyll-theme-primer     
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+
+# This tells Jekyll how to build URLs for posts automatically
+permalink: /posts/:year-:month-:day-:title/
