@@ -4,17 +4,13 @@ title: Elemen.ai Content Hub
 permalink: /
 ---
 
-# Welcome to the Elemen.ai Content Hub
+# AI-Generated Drafts
 
-Below are our latest AI-generated drafts:
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        {{ post.title }}
-      </a>
-      <br><small>{{ post.date | date: "%b %-d, %Y" }}</small>
-    </li>
-  {% endfor %}
-</ul>
+{% assign sorted = site.posts | sort: 'date' | reverse %}
+{% for post in sorted %}
+- <a class="btn" href="{{ post.url | prepend: site.baseurl }}">
+    {{ post.title }}  
+    <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
+  </a>
+{% endfor %}
+gut
