@@ -9,3 +9,10 @@ plugins:
 
 # This tells Jekyll how to build URLs for posts automatically
 permalink: /posts/:year-:month-:day-:title/
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+

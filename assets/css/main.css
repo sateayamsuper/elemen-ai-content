@@ -32,3 +32,77 @@ header {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+/* style month headers */
+details > summary {
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #e1e4e8;
+  margin-top: 1.5rem;
+}
+
+/* indent the list inside details */
+details ul {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* style individual items */
+details li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0366d6;
+  color: white;
+  padding: 0.5rem;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header inner flex */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-nav a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+/* Footer inner */
+.footer-inner {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #586069;
+}
+
+.toggle-btn {
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  color: #0366d6;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.month-group ul { margin-top: 0.5rem; }
+
+.go-back {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #586069;
+}
+.go-back:hover {
+  background: #444d56;
+}
+
