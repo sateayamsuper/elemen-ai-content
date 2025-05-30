@@ -6,8 +6,8 @@ permalink: /
 
 # AI-Generated Drafts
 
+<!-- Grouped posts by month -->
 {% assign posts_grouped = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
-
 {% for group in posts_grouped %}
   {% assign ym = group.name %}
   {% assign year = ym | slice: 0, 4 %}
@@ -42,4 +42,15 @@ permalink: /
       {% endfor %}
     </ul>
   </details>
+{% endfor %}
+
+<!-- Sorted list of posts -->
+<hr>
+<h2>All Posts</h2>
+{% assign sorted = site.posts | sort: 'date' | reverse %}
+{% for post in sorted %}
+- <a class="btn" href="{{ post.url | prepend: site.baseurl }}">
+    {{ post.title }}  
+    <small>— {{ post.date | date: "%b %-d, %Y" }}</small>
+  </a>
 {% endfor %}
